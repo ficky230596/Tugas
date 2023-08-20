@@ -1,0 +1,146 @@
+/* CSS untuk latar belakang animasi rainbow pastel */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    padding: 20px;
+}
+
+/* Animasi rainbow */
+body {
+    background-image: linear-gradient(45deg, #e0aaff, #9ad3bc, #5c8ff5cb, #f785ff);
+    background-size: 400% 400%;
+    animation: rainbow 5s ease-in-out infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Navigasi */
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #060000;
+    background-color: #ffffff96;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.nav a:last-child {
+    margin-right: 0;
+}
+
+.nav a:hover {
+    background-color: #ff00f764;
+}
+
+/* Profil Pengguna */
+.user-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.user-profile span {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #101010;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 2px solid #110101;
+    border-right: 2px solid #0e0101;
+}
+
+th {
+    background-color: #0400007f;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e4d3d323;
+}
+
+/* Media query untuk responsivitas */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 24px;
+    }
+
+    .nav a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .user-profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.greeting {
+    text-align: center;
+}

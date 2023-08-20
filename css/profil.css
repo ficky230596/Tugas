@@ -1,0 +1,58 @@
+/* profil.css */
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+  }
+  
+  form {
+	max-width: 400px;
+	margin: 20px auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="date"],
+  form select {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  form select {
+	height: 34px;
+  }
+  
+  form input[type="file"] {
+	margin-bottom: 10px;
+  }
+  
+  form input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+	background-color: #45a049;
+  }
+  
+  .error-message {
+	color: red;
+	margin-top: 5px;
+	font-size: 14px;
+  }
+  

@@ -1,0 +1,52 @@
+/* styling untuk halaman profil */
+.profil {
+    margin-top: 50px;
+    text-align: center;
+    }
+    
+    .profil img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    }
+    
+    .profil h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    }
+    
+    .profil p {
+    font-size: 24px;
+    margin: 10px 0;
+    }
+    
+    /* styling untuk form input profil */
+    .form-input {
+    margin-top: 50px;
+    text-align: center;
+    }
+    
+    .form-input input[type="text"],
+    .form-input input[type="file"] {
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 5px;
+    width: 300px;
+    }
+    
+    .form-input select {
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 5px;
+    width: 300px;
+    }
+    
+    .form-input button[type="submit"] {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }

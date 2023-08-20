@@ -1,0 +1,135 @@
+/* CSS untuk latar belakang animasi rainbow pastel */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Animasi rainbow */
+body {
+    background-image: linear-gradient(45deg, #e0aaff, #9ad3bc, #ffe699, #ff8585);
+    background-size: 400% 400%;
+    animation: rainbow 5s ease-in-out infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Navigasi */
+.container a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #060000;
+    background-color: #ffffff96;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.container a:hover {
+    background-color: #ff00f764;
+}
+
+/* Tabel */
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+.container th,
+.container td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.container th {
+    background-color: #f5f5f57f;
+}
+
+.container tbody tr:nth-child(even) {
+    background-color: #f9f9f985;
+}
+
+/* Lebar kolom tabel */
+.container table thead th:first-child,
+.container table tbody td:first-child {
+    width: 10%;
+}
+
+.container table thead th:nth-child(2),
+.container table tbody td:nth-child(2),
+.container table thead th:nth-child(3),
+.container table tbody td:nth-child(3),
+.container table thead th:nth-child(4),
+.container table tbody td:nth-child(4) {
+    width: 30%;
+}
+
+/* Media query untuk responsivitas */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .container table th,
+    .container table td {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container table thead th:first-child,
+    .container table tbody td:first-child,
+    .container table thead th:nth-child(n),
+    .container table tbody td:nth-child(n) {
+        width: auto;
+    }
+}
+.nav-table a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c63ff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-table a:hover {
+    background-color: #ff6d6d;
+}

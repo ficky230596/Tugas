@@ -1,0 +1,159 @@
+/* Mengatur tampilan umum */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 100px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f8f8f898;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+/* Mengatur tampilan profil */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 210px;
+  height: 300px;
+  overflow: hidden;
+  margin-right: 30px;
+  box-shadow: 0 0 10px rgb(25, 25, 25);
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details {
+  flex-grow: 1;
+}
+
+.profile-details h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.profile-info {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Mengatur tampilan tombol */
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button-container a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button-container a:hover {
+  background-color: #0056b3;
+}
+
+/* Mengatur tampilan pesan kesalahan */
+.error-message {
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.error-message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.error-message a:hover {
+  text-decoration: underline;
+}
+.profile-details h2 {
+  font-size: 20px; /* Ukuran huruf untuk nama */
+  margin: 0 0 10px;
+  color: #333;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.profile-details p span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-details p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-details p span {
+  font-weight: bold;
+  margin-right: 10px;
+  width: 120px; /* Sesuaikan lebar span */
+}
+body {
+  animation: rainbow-background 4s infinite;
+}
+
+@keyframes rainbow-background {
+  0% {
+    background: linear-gradient(45deg, #ffdde1, #fcffbd, #d2ffbd, #bdffe9, #c3daff, #f3bdff, #ffdde1);
+  }
+  14% {
+    background: linear-gradient(45deg, #ffdde1, #fcffbd, #d2ffbd, #bdffe9, #c3daff, #f3bdff, #ffdde1);
+  }
+  28% {
+    background: linear-gradient(45deg, #fcffbd, #d2ffbd, #bdffe9, #c3daff, #f3bdff, #ffdde1, #fcffbd);
+  }
+  42% {
+    background: linear-gradient(45deg, #d2ffbd, #bdffe9, #c3daff, #f3bdff, #ffdde1, #fcffbd, #d2ffbd);
+  }
+  57% {
+    background: linear-gradient(45deg, #bdffe9, #c3daff, #f3bdff, #ffdde1, #fcffbd, #d2ffbd, #bdffe9);
+  }
+  71% {
+    background: linear-gradient(45deg, #c3daff, #f3bdff, #ffdde1, #fcffbd, #d2ffbd, #bdffe9, #c3daff);
+  }
+  85% {
+    background: linear-gradient(45deg, #f3bdff, #ffdde1, #fcffbd, #d2ffbd, #bdffe9, #c3daff, #f3bdff);
+  }
+  100% {
+    background: linear-gradient(45deg, #ffdde1, #fcffbd, #d2ffbd, #bdffe9, #c3daff, #f3bdff, #ffdde1);
+  }
+}
